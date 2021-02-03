@@ -8,3 +8,4 @@ def home_view(request):
     job = Jobs.objects.all()
     context = {'allJobs':job}
     return render(request,'jobs/home.html', context)
+
